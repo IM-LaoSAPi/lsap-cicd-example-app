@@ -9,3 +9,8 @@ app.get("/", (req, res) => {
 });
 
 module.exports = app;
+
+app.get('/time', (req, res) => {
+  const now = new Date().toISOString();  // ISO 格式
+  res.json({ time: now });
+});
