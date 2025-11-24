@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
     .send("<h1>Welcome to the CI/CD Workshop!</h1>");
 });
 
-module.exports = app;
+module.exports = app; 
