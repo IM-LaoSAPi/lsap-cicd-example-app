@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Build & Test') {
+        stage('Build & Test') { 
             steps {
                 sh 'npm install'
                 sh 'npm test'
