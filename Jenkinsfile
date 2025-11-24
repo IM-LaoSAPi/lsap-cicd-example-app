@@ -1,10 +1,13 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs "Node_18"  // 你設定的名稱
+    }
+
     stages {
         stage('Build & Test') {
             steps {
-                echo "Running CI on branch: ${env.BRANCH_NAME}"
                 sh 'npm install'
                 sh 'npm test'
             }
